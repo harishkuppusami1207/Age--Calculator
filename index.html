@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="card">
+        <header class="card-header">
+            <h1>Age Calculator</h1>
+            <p>Find out exactly how old you are.</p>
+        </header>
+
+        <section class="card-body">
+            <label for="birthDate">Date of birth</label>
+            <input type="date" id="birthDate">
+
+            <button id="calculateButton">Calculate age</button>
+
+            <p id="message" class="message" role="alert"></p>
+
+            <div id="result" class="result hidden" aria-live="polite">
+                <div class="stat">
+                    <span class="number" id="years">0</span>
+                    <span class="unit">Years</span>
+                </div>
+                <div class="stat">
+                    <span class="number" id="months">0</span>
+                    <span class="unit">Months</span>
+                </div>
+                <div class="stat">
+                    <span class="number" id="days">0</span>
+                    <span class="unit">Days</span>
+                </div>
+            </div>
+
+            <p id="birthday" class="birthday hidden"></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
